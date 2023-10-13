@@ -1,0 +1,23 @@
+/* style.css */
+
+* {
+  /* outline: 1px solid lightcoral; */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+  place-content: center;
+
+}
+
+.cell {
+  border: 1px solid black;
+}
+
+button {
+  height: 100%;
+  width: 100%;
+  font-size: 100px;
+}
