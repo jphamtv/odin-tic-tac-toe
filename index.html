@@ -12,13 +12,33 @@
 
 <body>
   <h1>TIC-TAC-TOE</h1>
+
+  <div class="start-game-container">
+    <div>
+      <form action="" id="player-name-input">
+        <div>
+          <label for="player-one-name">Player 1 Name</label>
+          <input type="text" name="player-one-name" id="player-one-name">
+        </div>
+        <div>
+          <label for="player-two-name">Player 2 Name</label>
+          <input type="text" name="player-two-name" id="player-two-name">
+        </div>
+        <button type="submit" class="start-button">Start Game</button>
+      </form>
+    </div>
+  </div>
+
   <div class="play-game-container">
     <div class="game-board"></div>
-    <button class="restart-button">Reset Game</button>
+    <button class="reset-button">Reset Game</button>
   </div>
-  <dialog class="game-over-modal">
-    <div class="winner-announcement">Player wins!</div>
-    <button class="restart-button">Play Again</button>
+
+  <dialog>
+    <div class="dialog-container">
+      <div class="winner-announcement"></div>
+      <button class="restart-button">Play Again</button>
+    </div>
   </dialog>
 </body>
 
