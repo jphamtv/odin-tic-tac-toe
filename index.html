@@ -16,13 +16,13 @@
   <div class="start-game-container">
     <div>
       <form action="" id="player-name-input">
-        <div>
+        <div class="name-input">
           <label for="player-one-name">Player 1 Name</label>
-          <input type="text" name="player-one-name" id="player-one-name">
+          <input type="text" name="player-one-name" id="player-one-name" required>
         </div>
-        <div>
+        <div class="name-input">
           <label for="player-two-name">Player 2 Name</label>
-          <input type="text" name="player-two-name" id="player-two-name">
+          <input type="text" name="player-two-name" id="player-two-name" required>
         </div>
         <button type="submit" class="start-button">Start Game</button>
       </form>
@@ -31,13 +31,19 @@
 
   <div class="play-game-container">
     <div class="game-board"></div>
-    <button class="reset-button">Reset Game</button>
+    <div class="gameboard-button-container">
+      <button class="quit-button">Quit</button>
+      <button class="reset-button">Reset Game</button>
+    </div>
   </div>
 
   <dialog>
     <div class="dialog-container">
       <div class="winner-announcement"></div>
-      <button class="restart-button">Play Again</button>
+      <div class="dialog-button-container">
+        <button class="quit-button">Quit</button>
+        <button class="play-again-button">Play Again</button>
+      </div>
     </div>
   </dialog>
 </body>
